@@ -145,13 +145,3 @@ IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'IX_movimiento_fecha')
     CREATE INDEX IX_movimiento_fecha ON movimiento_tarjeta(fecha_movimiento);
 GO
 
-
-
-
-
-
-
-
-
-
-
