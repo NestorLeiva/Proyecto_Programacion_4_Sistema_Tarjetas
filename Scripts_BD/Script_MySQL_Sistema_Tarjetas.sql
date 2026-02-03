@@ -8,7 +8,7 @@ CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 USE sistema_tarjetas;
 
--- Tabla de cajeros automáticos
+-- Tabla de cajeros automaticos
 CREATE TABLE cajero (
     id_cajero BIGINT PRIMARY KEY AUTO_INCREMENT,
     codigo_cajero VARCHAR(20) UNIQUE NOT NULL,
@@ -16,14 +16,14 @@ CREATE TABLE cajero (
     estado VARCHAR(20) DEFAULT 'ACTIVO' CHECK (estado IN ('ACTIVO', 'INACTIVO'))
 );
 
--- Tabla de códigos de motivo de rechazo (1-5)
+-- Tabla de codigos de motivo de rechazo (1-5)
 CREATE TABLE codigo_motivo (
     id_codigo_motivo INT PRIMARY KEY AUTO_INCREMENT,
     codigo INT UNIQUE NOT NULL CHECK (codigo BETWEEN 1 AND 5),
     descripcion VARCHAR(100) NOT NULL
 );
 
--- Tabla de tipos de transacción
+-- Tabla de tipos de transaccion
 CREATE TABLE tipo_transaccion (
     id_tipo_transaccion INT PRIMARY KEY AUTO_INCREMENT,
     codigo_tipo VARCHAR(30) UNIQUE NOT NULL,
@@ -65,7 +65,7 @@ CREATE TABLE autorizacion (
     CONSTRAINT fk_autorizacion_motivo FOREIGN KEY (id_codigo_motivo) REFERENCES codigo_motivo(id_codigo_motivo)
 );
 
--- Tabla de movimientos de crédito
+-- Tabla de movimientos de credito
 CREATE TABLE movimiento_credito (
     id_movimiento BIGINT PRIMARY KEY AUTO_INCREMENT,
     id_tarjeta BIGINT NOT NULL,
@@ -77,9 +77,35 @@ CREATE TABLE movimiento_credito (
     CONSTRAINT fk_movimiento_credito_tarjeta FOREIGN KEY (id_tarjeta) REFERENCES tarjeta(id_tarjeta)
 );
 
--- Índices para mejorar el rendimiento
+-- Indices para mejorar el rendimiento
 CREATE INDEX idx_tarjeta_numero ON tarjeta(numero_tarjeta);
 CREATE INDEX idx_tarjeta_pin ON tarjeta(pin);
 CREATE INDEX idx_autorizacion_codigo ON autorizacion(codigo_autorizacion);
 CREATE INDEX idx_autorizacion_fecha ON autorizacion(fecha_solicitud);
 CREATE INDEX idx_cajero_codigo ON cajero(codigo_cajero);
+
+-- ALTER TABLE
+
+USE Sistema_Tarjetas;
+ALTER TABLE tarjeta
+MODIFY COLUMN numero_tarjeta VARBINARY(19) NOT NULL,
+MODIFY COLUMN PIN VARBINARY(4) NOT NULL,
+MODIFY COLUMN fecha_vencimiento VARBINARY(50) NOT NULL,
+MODIFY COLUMN cvv VARBINARY(3) NOT NULL
+
+SELECT * FROM tarjeta;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
