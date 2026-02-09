@@ -1,0 +1,5 @@
+BITACORA AUT4 INICIADA
+09/02/2026: {"tarjeta": "4111 11** **** 1111", "cajero": 1, "cliente": "Sistema_Tarjetas", "tipo": "AUTORIZACION_INICIAL"}
+09/02/2026: {"tarjeta": "4111 11** **** 1111", "cajero": 1, "cliente": "CLI-123456", "tipo": "AUTORIZACION_EXITOSA"}
+09/02/2026: {"tarjeta": "4111 11** **** 1111", "cajero": 1, "cliente": "Sistema_Tarjetas", "tipo": "AUTORIZACION_INICIAL"}
+09/02/2026: {"tarjeta": "4111 11** **** 1111", "cajero": 1, "cliente": "CLI-123456", "tipo": "AUTORIZACION_EXITOSA"}
