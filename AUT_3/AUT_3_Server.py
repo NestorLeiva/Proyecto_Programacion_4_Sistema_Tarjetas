@@ -94,3 +94,20 @@ def validar_y_cambiar_pin(self, datos):
 # ===========================================
 #       funcion manejar los clientes 
 # ===========================================
+
+
+def manejar_cliente (self, sock, addr):
+    print(f"[CONETADO] {addr}")
+    try:
+        data = sock.recv(4049).decode("utf-8")
+        if not data:
+            return
+        trama = json.loads(data)                            # JSON que proviene del cajero
+        respuesta = self.validar_y_cambiar_pin(trama)       # llama al metodo, valida y Genera la Respuesta
+        sock.send(json.dumps(respuesta).encode("utf-8"))    # convierte la Respuesta Json, la codifica y la envia por el Socket
+    except Exception as e:
+        sock.send (json.dumps({"estado": "ERROR", "mensaje": str(e).encode("utf-8")}))
+    finally:
+        sock.close()
+        print(f"[DESCONECTADO] {addr}")
+        
