@@ -64,6 +64,10 @@ CREATE TABLE autorizacion (
     CONSTRAINT fk_autorizacion_tipo FOREIGN KEY (id_tipo_transaccion) REFERENCES tipo_transaccion(id_tipo_transaccion),
     CONSTRAINT fk_autorizacion_motivo FOREIGN KEY (id_codigo_motivo) REFERENCES codigo_motivo(id_codigo_motivo)
 );
+ALTER TABLE autorizacion
+MODIFY codigo_autorizacion VARCHAR(20) NOT NULL;
+
+SELECT * FROM autorizacion;
 
 -- Tabla de movimientos de credito
 CREATE TABLE movimiento_credito (
@@ -89,14 +93,42 @@ CREATE INDEX idx_cajero_codigo ON cajero(codigo_cajero);
 USE Sistema_Tarjetas;
 ALTER TABLE tarjeta
 MODIFY COLUMN numero_tarjeta VARBINARY(19) NOT NULL,
-MODIFY COLUMN PIN VARBINARY(4) NOT NULL,
+MODIFY COLUMN pin VARBINARY(4) NOT NULL,
 MODIFY COLUMN fecha_vencimiento VARBINARY(50) NOT NULL,
-MODIFY COLUMN cvv VARBINARY(3) NOT NULL
+MODIFY COLUMN cvv VARBINARY(3) NOT NULL;
+
+USE Sistema_Tarjetas;
+ALTER TABLE tarjeta
+ADD COLUMN fecha_venc_tmp DATE;
+
+UPDATE tarjeta
+SET fecha_venc_tmp = STR_TO_DATE(
+    CAST(fecha_vencimiento AS CHAR(50)),
+    '%Y-%m-%d'
+);
+ALTER TABLE tarjeta
+DROP COLUMN fecha_vencimiento;
+
+ALTER TABLE tarjeta
+CHANGE COLUMN fecha_venc_tmp fecha_vencimiento DATE NOT NULL;
+
 
 SELECT * FROM tarjeta;
 
 
+-- Ver tarjetas activas con datos en HEX (legible)
+SELECT id_tarjeta, numero_tarjeta, HEX(pin) as pin_hex,
+fecha_vencimiento, HEX(cvv) as cvv_hex, estado 
+FROM tarjeta 
+WHERE estado = 'ACTIVA' 
+LIMIT 0, 1000;
 
+
+SELECT 
+    id_tarjeta,
+    HEX(pin) AS pin_hex
+FROM tarjeta
+WHERE numero_tarjeta = UNHEX('4111-1111-1111-1111');
 
 
 

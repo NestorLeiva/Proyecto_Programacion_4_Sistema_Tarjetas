@@ -1,7 +1,7 @@
 import socket
 import json
 import threading
-from datetime import datetime
+from datetime import datetime, date
 from mysql.connector import Error
 from AUT_3_MySQL import Conexion  # clase de conexión MySQL
 
@@ -47,25 +47,33 @@ class AUT3Server:
 
             fila = cursor.fetchone()
             if not fila:
-                return {"estado": "ERROR", "mensaje": "Tarjeta no existe"}
+                return {"estado": "ERROR", "mensaje": "Tarjeta no Existe"}
 
             id_tarjeta, pin_db, fecha_db, cvv_db, estado = fila
 
             if estado != "ACTIVA":
-                return {"estado": "ERROR", "mensaje": "Tarjeta inactiva"}
+                return {"estado": "ERROR", "mensaje": "Tarjeta Inactiva"}
 
             # validar PIN
-            if pin_db.hex() != datos["pin_actual"]:
+            if pin_db.decode().strip() != datos["pin_actual"]:
                 return {"estado": "ERROR", "mensaje": "*** PIN INCORRECTO ***"}
 
             # validar fecha vencimiento
-            if fecha_db != datos["fecha_vencimiento"]:
-                return {"estado": "ERROR", "mensaje": "*** FECHA VENCIMIENTO INCORRECTA ***"}
+        # ===========================================================
+            fecha_cliente = datetime.strptime(
+                datos["fecha_vencimiento"], "%Y-%m-%d").date()
 
+            if fecha_db < date.today():
+                return {
+                    "estado": "ERROR",
+                    "mensaje": "*** FECHA VENCIMIENTO INCORRECTA ***"
+                }  
+        #  ============================================================
+            
             # validar CVV
-            if cvv_db.hex() != datos["cvv"]:
+            if cvv_db.decode().strip() != datos["cvv"]:
                 return {"estado": "ERROR", "mensaje": "*** CVV INCORRECTO ***"}
-
+        #  ============================================================
             # validar cajero
             cursor.execute(
                 "SELECT id_cajero FROM cajero WHERE id_cajero = %s",
@@ -83,18 +91,21 @@ class AUT3Server:
 
             # registrar autorización
             codigo = f"PIN{datetime.now().strftime('%y%m%d%H%M%S')}"
+        #  ============================================================
+            id_tipo_transaccion = 1  # CAMBIO_PIN
 
-            cursor.execute("""
-                INSERT INTO autorizacion
-                (codigo_autorizacion, id_tarjeta, id_tipo_transaccion,
-                 monto, estado, fecha_solicitud, fecha_respuesta, respuesta)
-                VALUES (%s, %s, %s, 0, 'APROBADA', NOW(), NOW(), 'OK')
-            """, (codigo, id_tarjeta, datos["id_cajero"]))
+            cursor.execute(""" INSERT INTO autorizacion (codigo_autorizacion, id_tarjeta, id_cajero, id_tipo_transaccion, monto, estado, fecha_solicitud, fecha_respuesta, respuesta) VALUES (%s, %s, %s, %s, 0, 'APROBADA', NOW(), NOW(), 'OK') """, ( 
+            codigo,
+            id_tarjeta,
+            datos["id_cajero"],
+            id_tipo_transaccion))
 
+        #  ============================================================
             Conexion.conn.commit()
 
             return {
                 "estado": "OK",
+                "mensaje": "PIN cambiado con Exito",
                 "codigo_autorizacion": codigo
             }
 
@@ -135,6 +146,7 @@ class AUT3Server:
     # ===========================================
     #   iniciar servidor
     # ===========================================
+
     def iniciar_servidor(self):
         server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -142,8 +154,7 @@ class AUT3Server:
         server_socket.listen(5)
 
         print(f"\n AUT3 corriendo en {host}:{port}")
-        print(" Esperando cajeros... (Ctrl+C para detener)")
-
+        print(" Esperando Respuesta Cajeros...")
         try:
             while True:
                 client, addr = server_socket.accept()
