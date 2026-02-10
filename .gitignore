@@ -1,0 +1,28 @@
+# Archivos Java compilados
+*.class
+target/
+*.jar
+
+# Python
+__pycache__/
+*.pyc
+AUT_3/
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Drivers y dependencias
+sqljdbc*/
+drivers/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
