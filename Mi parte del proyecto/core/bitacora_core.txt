@@ -21,8 +21,33 @@
 {"fecha": "2026-02-06 01:32:27", "trama_recibida": "212345678904567 89** **** 678900000000", "respuesta_enviada": "OK0000000000015000000"}
 {"fecha": "2026-02-06 01:41:03", "trama_recibida": "212345678904567 89** **** 678900000000", "respuesta_enviada": "OK0000000000015000000"}
 {"fecha": "2026-02-06 01:41:50", "trama_recibida": "212345678904567 89** **** 678900000000", "respuesta_enviada": "OK0000000000015000000"}
+<<<<<<< Updated upstream
 {"fecha": "2026-02-07 00:49:04", "trama_in": "212345678904567 89****** 1234 00000000", "respuesta_out": "OK0000000000015000000"}
 {"fecha": "2026-02-07 00:53:16", "trama_in": "21234567890123456789012345678900000000", "respuesta_out": "OK0000000000015000000"}
 {"fecha": "2026-02-09 20:01:53", "trama_in": "212345678904567890123456789   00000000", "respuesta_out": "OK0000000000015000000"}
 {"fecha": "2026-02-09 20:03:26", "trama_in": "21234567890123456789012345678900000000", "respuesta_out": "OK0000000000015000000"}
 {"fecha": "2026-02-09", "trama_in": "21234567890123456789012345678900000000", "respuesta_out": "OK0000000000015000000"}
+=======
+{"fecha": "2026-02-10 00:31:36", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 00:32:29", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 00:37:19", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 00:37:57", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 00:38:31", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 00:39:00", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 00:40:14", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 00:42:22", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 00:44:04", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 00:49:50", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 00:51:56", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 00:54:39", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 01:02:22", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 01:04:12", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 01:04:21", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 01:07:55", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 01:10:41", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 01:11:10", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 01:14:29", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 01:16:08", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 01:22:39", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR_BD"}
+{"fecha": "2026-02-10 01:44:27", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "CUENTA_INEXISTENTE"}
+>>>>>>> Stashed changes

@@ -10,9 +10,16 @@ import java.util.concurrent.Executors;
 
 public class CoreBancario {
 
+<<<<<<< Updated upstream
     private static final String DB_URL = "jdbc:sqlserver://localhost:1433;databaseName=core_bancario;encrypt=false;trustServerCertificate=true;";
     private static final String USER = "rodri";
     private static final String PASS = "1234";
+=======
+  // USAR TU CADENA DE CONEXIÓN AQUÍ (LA QUE YA TE FUNCIONA)
+  private static final String DB_URL = "jdbc:sqlserver://localhost:1433;databaseName=core_bancario;encrypt=false;trustServerCertificate=true;";
+  private static final String USER = "nestor_p6";
+  private static final String PASS = "12345678";
+>>>>>>> Stashed changes
 
     public static void main(String[] args) {
         int puerto = 5000;
