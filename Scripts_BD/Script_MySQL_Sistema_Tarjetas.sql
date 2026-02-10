@@ -129,15 +129,3 @@ SELECT
     HEX(pin) AS pin_hex
 FROM tarjeta
 WHERE numero_tarjeta = UNHEX('4111-1111-1111-1111');
-
-
-
-
-
-
-
-
-
-
-
-
