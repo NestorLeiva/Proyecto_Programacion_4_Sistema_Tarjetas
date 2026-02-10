@@ -10,7 +10,7 @@ import os
 # =========================================
 # se crea una cola
 cola_bitacora = Queue()
-RUTA_BITACORA = "bitacora.txt"
+RUTA_BITACORA = "bitacora_AUT4.txt"
 # archivo donde se guarda todas las transacciones
 
 def enmascarar_tarjeta(numero_tarjeta: str) -> str:
@@ -133,7 +133,7 @@ def manejar_cliente(conn, addr):
 
 def servidor_aut3_aut4():
     # ========================================
-    # INICIALIZAR BITÁCORA AUT4
+    # INICIALIZAR BITACORA AUT4
     # ========================================
     if not os.path.exists(RUTA_BITACORA):
         with open(RUTA_BITACORA, "w") as f:
