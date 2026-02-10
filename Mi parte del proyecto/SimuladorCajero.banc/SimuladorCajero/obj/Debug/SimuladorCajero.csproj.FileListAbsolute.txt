@@ -1,0 +1,8 @@
+C:\Users\rodri\source\repos\SimuladorCajero.banc\SimuladorCajero\bin\Debug\SimuladorCajero.exe.config
+C:\Users\rodri\source\repos\SimuladorCajero.banc\SimuladorCajero\bin\Debug\SimuladorCajero.exe
+C:\Users\rodri\source\repos\SimuladorCajero.banc\SimuladorCajero\bin\Debug\SimuladorCajero.pdb
+C:\Users\rodri\source\repos\SimuladorCajero.banc\SimuladorCajero\obj\Debug\SimuladorCajero.csproj.AssemblyReference.cache
+C:\Users\rodri\source\repos\SimuladorCajero.banc\SimuladorCajero\obj\Debug\SimuladorCajero.csproj.CoreCompileInputs.cache
+C:\Users\rodri\source\repos\SimuladorCajero.banc\SimuladorCajero\obj\Debug\SimuladorCajero.exe
+C:\Users\rodri\source\repos\SimuladorCajero.banc\SimuladorCajero\obj\Debug\SimuladorCajero.pdb
+C:\Users\rodri\source\repos\SimuladorCajero.banc\SimuladorCajero\obj\Debug\SimuladorCajero.exe.config
