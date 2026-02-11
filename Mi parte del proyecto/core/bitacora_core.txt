@@ -1,0 +1,43 @@
+{"fecha": "Thu Feb 05 22:17:50 CST 2026", "trama_recibida": "212345678904567 89****** 1234 00000000", "respuesta_enviada": "ERROR"}
+{"fecha": "Thu Feb 05 23:29:34 CST 2026", "trama_recibida": "112343674904564 89** **** 678900000000", "respuesta_enviada": "ERROR"}
+{"fecha": "Thu Feb 05 23:41:50 CST 2026", "trama_recibida": "212345678904567 89** **** 678900000000", "respuesta_enviada": "ERROR"}
+{"fecha": "Fri Feb 06 00:05:56 CST 2026", "trama_recibida": "212345678904567 89** **** 678900000000", "respuesta_enviada": "ERROR"}
+{"fecha": "Fri Feb 06 00:16:55 CST 2026", "trama_recibida": "212345678904567 89** **** 678900000000", "respuesta_enviada": "ERROR"}
+{"fecha": "Fri Feb 06 00:20:31 CST 2026", "trama_recibida": "112345678904567 89** **** 678900000000", "respuesta_enviada": "ERROR"}
+{"fecha": "Fri Feb 06 00:23:17 CST 2026", "trama_recibida": "112345678904567 89** **** 678900000000", "respuesta_enviada": "ERROR"}
+{"fecha": "Fri Feb 06 00:26:22 CST 2026", "trama_recibida": "212345678904567 89** **** 678900000000", "respuesta_enviada": "ERROR"}
+{"fecha": "Fri Feb 06 00:35:52 CST 2026", "trama_recibida": "212345678904567 89** **** 678900000000", "respuesta_enviada": "ERROR"}
+{"fecha": "Fri Feb 06 00:47:01 CST 2026", "trama_recibida": "212345678904567 89** **** 678900000000", "respuesta_enviada": "ERROR"}
+{"fecha": "Fri Feb 06 00:49:50 CST 2026", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR"}
+{"fecha": "Fri Feb 06 00:51:16 CST 2026", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR"}
+{"fecha": "Fri Feb 06 00:53:17 CST 2026", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR"}
+{"fecha": "Fri Feb 06 01:05:41 CST 2026", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR"}
+{"fecha": "Fri Feb 06 01:06:49 CST 2026", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR"}
+{"fecha": "Fri Feb 06 01:07:14 CST 2026", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR"}
+{"fecha": "Fri Feb 06 01:10:30 CST 2026", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR"}
+{"fecha": "Fri Feb 06 01:12:16 CST 2026", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "ERROR"}
+{"fecha": "Fri Feb 06 01:23:27 CST 2026", "trama_recibida": "212345678904567890123456789   00000000", "respuesta_enviada": "OK0000000000015000000"}
+{"fecha": "Fri Feb 06 01:24:14 CST 2026", "trama_recibida": "212345678904567 89** **** 678900000000", "respuesta_enviada": "OK0000000000015000000"}
+{"fecha": "2026-02-06 01:32:27", "trama_recibida": "212345678904567 89** **** 678900000000", "respuesta_enviada": "OK0000000000015000000"}
+{"fecha": "2026-02-06 01:41:03", "trama_recibida": "212345678904567 89** **** 678900000000", "respuesta_enviada": "OK0000000000015000000"}
+{"fecha": "2026-02-06 01:41:50", "trama_recibida": "212345678904567 89** **** 678900000000", "respuesta_enviada": "OK0000000000015000000"}
+{"fecha": "2026-02-07 00:49:04", "trama_in": "212345678904567 89****** 1234 00000000", "respuesta_out": "OK0000000000015000000"}
+{"fecha": "2026-02-07 00:53:16", "trama_in": "21234567890123456789012345678900000000", "respuesta_out": "OK0000000000015000000"}
+{"fecha": "2026-02-09 20:01:53", "trama_in": "212345678904567890123456789   00000000", "respuesta_out": "OK0000000000015000000"}
+{"fecha": "2026-02-09 20:03:26", "trama_in": "21234567890123456789012345678900000000", "respuesta_out": "OK0000000000015000000"}
+{"fecha": "2026-02-09", "trama_in": "21234567890123456789012345678900000000", "respuesta_out": "OK0000000000015000000"}
+{"fecha": "2026-02-10 22:07:45", "trama_in": "212345678904567890123456789   00000000", "respuesta_out": "CUENTA_NO_EXISTE"}
+{"fecha": "2026-02-10 22:11:20", "trama_in": "112CC001234567890123456789345678904111-1111-1111-111100000000", "respuesta_out": "CUENTA_NO_EXISTE"}
+{"fecha": "2026-02-10 22:12:06", "trama_in": "212CC001234567890123456789345678904111-1111-1111-111100000000", "respuesta_out": "CUENTA_NO_EXISTE"}
+{"fecha": "2026-02-10 22:14:04", "trama_in": "1'CC001234567'4111-1111-1111-111100000000", "respuesta_out": "CUENTA_NO_EXISTE"}
+{"fecha": "2026-02-10 22:14:25", "trama_in": "2'CC001234567'4111-1111-1111-111100000000", "respuesta_out": "CUENTA_NO_EXISTE"}
+{"fecha": "2026-02-10 22:23:54", "trama_in": "2'CC001234567'4111-1111-1111-111100000000", "respuesta_out": "CUENTA_NO_EXISTE"}
+{"fecha": "2026-02-10 23:02:32", "trama_in": "1CC0012345678901234567841111112431952111111111", "respuesta_out": "CUENTA_NO_EXISTE"}
+{"fecha": "2026-02-10 23:15:21", "trama_in": "2CC0012345678901234567841111111822980111111111", "respuesta_out": "CUENTA_NO_EXISTE"}
+{"fecha": "2026-02-10 23:17:06", "trama_in": "1CC001234567           41111119619287111111111", "respuesta_out": "CUENTA_NO_EXISTE"}
+{"fecha": "2026-02-10 23:29:12", "trama_in": "2CC0012345678901234567841111115814544611111111", "respuesta_out": "CUENTA_NO_EXISTE"}
+{"fecha": "2026-02-10 23:40:39", "trama_in": "2CC001234567890123456784111-1111-1111-11111248710500000000", "respuesta_out": "CUENTA_NO_EXISTE"}
+{"fecha": "2026-02-10 23:48:12", "trama_in": "1CC0012345678901234567894111-1111-1111-1114318126410500000", "respuesta_out": "CUENTA_NO_EXISTE"}
+{"fecha": "2026-02-10 23:48:40", "trama_in": "2CC0012345678901234567894111-1111-1111-1112894211810000000", "respuesta_out": "CUENTA_NO_EXISTE"}
+{"fecha": "2026-02-11 00:02:12", "trama_in": "2CC0012345678901234567894111-1111-1111-11113284450200000000", "respuesta_out": "OK0000000000150000000"}
+{"fecha": "2026-02-11 00:03:06", "trama_in": "1CC0012345678901234567894111-1111-1111-11117108092405000000", "respuesta_out": "OK"}
