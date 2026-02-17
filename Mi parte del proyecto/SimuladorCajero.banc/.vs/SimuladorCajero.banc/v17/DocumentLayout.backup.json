@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rodri\\Desktop\\Mi parte del proyecto\\SimuladorCajero.banc\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5AFC7BB6-C0B0-4CA6-A5B3-7174388A5F80}|SimuladorCajero\\SimuladorCajero.csproj|c:\\users\\rodri\\desktop\\mi parte del proyecto\\simuladorcajero.banc\\simuladorcajero\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AFC7BB6-C0B0-4CA6-A5B3-7174388A5F80}|SimuladorCajero\\SimuladorCajero.csproj|solutionrelative:simuladorcajero\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\Mi parte del proyecto\\SimuladorCajero.banc\\SimuladorCajero\\Program.cs",
+              "RelativeDocumentMoniker": "SimuladorCajero\\Program.cs",
+              "ToolTip": "C:\\Users\\rodri\\Desktop\\Mi parte del proyecto\\SimuladorCajero.banc\\SimuladorCajero\\Program.cs",
+              "RelativeToolTip": "SimuladorCajero\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAADwvyQAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T03:45:03.847Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
